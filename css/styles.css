@@ -268,7 +268,7 @@ body {
 @media only screen and (max-width: 1350px) {
 
   .services__list {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
 }
@@ -282,6 +282,10 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
+  .services__item {
+    flex-grow: 1;
+    max-width: 45%;
+  }
 
   .services-intro__container {
     padding-top: 400px;
@@ -293,6 +297,23 @@ body {
   .services__info {
     margin-left: auto;
     margin-right: auto;
+  }
+
+}
+
+@media only screen and (max-width: 670px) {
+
+  .services__item {
+    flex-grow: 1;
+    max-width: 60%;
+  }
+
+}
+
+@media only screen and (max-width: 520px) {
+
+  .services__item {
+    max-width: 305px;
   }
 
 }
